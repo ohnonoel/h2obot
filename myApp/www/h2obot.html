@@ -1,0 +1,123 @@
+<html>
+    <head>
+      <title>H2OBot</title>
+<style>
+
+body {
+width:1280px;
+height:800px;
+}
+
+.col-2 {
+width:19%;
+float:left;
+height:500px;
+}
+
+.col-8 {
+width: 60%;
+float:left;
+height:500px;
+}
+
+h1 {
+font-size:14px;
+}
+
+input[type=button] {
+    color:#08233e;
+    font-size:20px;
+   height:50px;
+   
+    cursor:pointer;
+}
+
+
+
+.well {
+
+background-color:#efefef;
+padding:10px;
+margin:5px;
+}
+
+.button {
+width: 50px;
+height: 50px;
+margin:10px;
+
+
+}
+
+.left { 
+float:left;
+}
+
+.right{
+float:right;
+}
+
+</style>
+    
+<script>
+function myFunction()
+{
+alert("Hello World!");
+}
+</script>	
+    </head>
+    <body>
+	
+	<div class="col-2">
+	<div class="well">
+	<h1>Water Temp</h1>
+	</div>
+	<div class="well">
+	<h1>Depth</h1>
+	</div>
+	<div class="well">
+	<h1>Data</h1>
+	</div>
+	<div class="well">
+	<div class="button left">
+	<input type="button" value="Left" onclick="myFunction(this);">
+	</div>
+	<div class="button left">
+	<input type="button" value="Right" onclick="myFunction(this);">
+	</div>
+		<div class="button right">
+	<input type="button" value="Up" onclick="myFunction(this);"> 
+	</div>
+	<div class="button right">
+	<input type="button" value="Down" onclick="myFunction(this);">
+	</div>
+	</div>
+	</div>
+	
+	<div class="col-8">
+	<p>the video goes here</p>
+	</div>
+	
+	<div class="col-2">
+	<div class="well">
+	<h1>Water Temp</h1>
+	</div>
+	<div class="well">
+	<h1>Depth</h1>
+	</div>
+	<div class="well">
+	<h1>Data</h1>
+	</div>
+	<div class="well">
+	<div class="button right">
+	<input type="button" value="+" onclick="myFunction(this);"> 
+	</div>
+	<div class="button right">
+	<input type="button" value="-" onclick="myFunction(this);">
+	</div>
+	</div>
+	</div>
+	
+	</body>
+	
+	</html>
