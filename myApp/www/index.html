@@ -91,11 +91,17 @@ function read_temp1()
               <button type="button" class="btn btn-default" onclick="direction('down');">
                 <i class="fa fa-chevron-up" title="Up"></i> 
               </button>
+              
+              <!-- connect button -->
+              <button type="button" id="connect" class="btn btn-default" style="margin-top:20px;">
+                  <i  title="Up">connect to arduino</i>
+              </button>
+              <p id="connected">click to connect</p>
             </div>
 
           <!-- center column -->  
           <div class="col-md-8">
-		  <img src="file:///C|/Users/nhardesty-demenge/Downloads/myApp (1)/myApp/video.png" width="800px"/>
+		  <img src="" width="800px"/>
 		  </div>
           
 
@@ -113,32 +119,30 @@ function read_temp1()
                 <h3>Engine Temp.<br /></h3>
                 <h1>75</h1>
             </div>
-            <!-- thrust decrease button -->
-              <button type="button" class="btn btn-default" onclick="accelerate('more');">
-                <i class="fa fa-plus" title="Increase"></i>
+            <!-- this will be thrust decrease button but for now is slowing LED flash speed -->
+            <button type="button" id="faster" class="btn btn-default" >
+                <i class="fa fa-plus" title="slow"></i>
               </button>
 
-            <!-- thrust increase button -->
-            <button type="button" class="btn btn-default" onclick="accelerate('less');">
-              <i class="fa fa-minus" title="Decrease"></i>
+            <!--this will be thrust increase button but for now is speeding up LED flashes -->
+            <button type="button" id="slower" class="btn btn-default">
+              <i class="fa fa-minus" title="fast"></i>
+            </button>
+            <!--led ON!-->
+            <button type="button" id="start_led" class="btn btn-default">
+                <i title="ON">ON</i>
+            </button>
+            <!--led OFF-->
+            <button type="button" id="stop_led" class="btn btn-default">
+                <i title="OFF">OFF</i>
             </button>
 
         
       </div> 
 
-      
-
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="http://code.jquery.com/jquery.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
       <!-- noduino -->
-      <script src="noduino/public/scripts/vendor/require-jquery.js"></script>
+      <script data-main="js/main" src="noduino/public/scripts/vendor/require-jquery.js"></script>
       <script src="http://localhost:8090/socket.io/socket.io.js"></script>
-      <script src="js/functions.js"></script>
-
     </body>
     
     
